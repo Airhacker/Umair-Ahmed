@@ -1,0 +1,10 @@
+.about-me-info {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.skills-info {
+  @include flex(row, space-evenly, center);
+  flex-wrap: wrap;
+}

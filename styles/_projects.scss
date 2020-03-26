@@ -14,4 +14,7 @@
   @include flex(column, center, center);
   min-width: 20rem;
   min-height: 30rem;
+  background: rgba(245, 245, 245, 0.74);
+  color: black;
+  border-radius: 10px;
 }

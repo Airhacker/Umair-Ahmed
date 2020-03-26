@@ -54,11 +54,6 @@ h4 {
   font-size: $header4;
   font-weight: lighter;
 }
-.nav-dot {
-  position: absolute;
-  left: -30%;
-  top: 11%;
-}
 
 .sub-head {
   @include flex(row, center, center);

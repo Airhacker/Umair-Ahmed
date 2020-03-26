@@ -5,6 +5,15 @@ header {
   min-height: 10vh;
 }
 
+.main-nav {
+  @include flex(row, flex-start, center);
+  flex: 2 1 30rem;
+}
+
+.main-nav li {
+  margin: 0rem 2rem;
+}
+
 .home-nav {
   @include flex(row, flex-end, center);
   flex: 1 1 30rem;
@@ -15,18 +24,6 @@ header {
 }
 
 // Body Element
-
-.navigation {
-  @include flex(column, center, flex-start);
-  position: absolute;
-  top: 40%;
-
-  li {
-    margin: 1.5rem 0rem;
-    justify-content: center;
-    opacity: 0.75;
-  }
-}
 
 .landing-page {
   @include flex(column, center, center);
@@ -45,6 +42,8 @@ header {
     }
   }
 }
+
+//Footer Element
 
 footer {
   opacity: 0.75;
