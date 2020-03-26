@@ -3,6 +3,7 @@ $text: 2rem;
 $big-text: 8rem;
 $header2: 2.5rem;
 $header4: 1.5rem;
+$special-color: #0ebfe9;
 
 @mixin flex($direction, $justify, $align) {
   display: flex;
