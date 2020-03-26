@@ -1,0 +1,17 @@
+.main-projects-head,
+.side-projects-head {
+  @include flex(row, flex-start, center);
+  flex-wrap: wrap;
+}
+
+.main-projects-list,
+.side-projects-list {
+  @include flex(row, center, center);
+}
+
+.main-projects,
+.side-projects {
+  @include flex(column, center, center);
+  min-width: 20rem;
+  min-height: 30rem;
+}

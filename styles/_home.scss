@@ -1,0 +1,53 @@
+// Header Element
+
+header {
+  @include flex(row, center, center);
+  min-height: 10vh;
+}
+
+.home-nav {
+  @include flex(row, flex-end, center);
+  flex: 1 1 30rem;
+}
+
+.home-nav li {
+  margin: 0rem 2rem;
+}
+
+// Body Element
+
+.navigation {
+  @include flex(column, center, flex-start);
+  position: absolute;
+  top: 40%;
+
+  li {
+    margin: 1.5rem 0rem;
+    justify-content: center;
+    opacity: 0.75;
+  }
+}
+
+.landing-page {
+  @include flex(column, center, center);
+  min-height: 85vh;
+
+  h1 {
+    letter-spacing: 1rem;
+    margin: 3rem;
+  }
+
+  ul {
+    @include flex(row, center, center);
+
+    li {
+      margin: 3rem 5rem;
+    }
+  }
+}
+
+footer {
+  opacity: 0.75;
+  min-height: 5vh;
+  @include flex(row, center, center);
+}

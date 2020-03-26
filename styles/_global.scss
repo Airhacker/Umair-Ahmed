@@ -1,0 +1,67 @@
+// Global Styling
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.975);
+  color: whitesmoke;
+  font-family: sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: $text;
+
+  &:hover {
+    color: cornflowerblue;
+  }
+}
+
+p {
+  font-size: $text;
+}
+
+h1 {
+  font-size: $big-text;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h4 {
+  font-size: $header4;
+  font-weight: lighter;
+}
+.nav-dot {
+  position: absolute;
+  left: -30%;
+  top: 11%;
+}
+
+.sub-head {
+  @include flex(row, center, center);
+  margin: 5rem;
+}
+
+#home,
+#projects,
+#about,
+#contact {
+  min-height: 100vh;
+}

@@ -1,0 +1,17 @@
+// Variables
+$text: 2rem;
+$big-text: 8rem;
+$header2: 2.5rem;
+$header4: 1.5rem;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+// Imports
+
+@import "global";
+@import "home";
+@import "projects";
