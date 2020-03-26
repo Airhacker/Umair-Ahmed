@@ -20,6 +20,11 @@ body {
 
 li {
   list-style: none;
+  @include flex(row, center, center);
+
+  svg {
+    margin: 0rem 1rem;
+  }
 }
 
 a {
@@ -42,6 +47,7 @@ h1 {
 
 h2 {
   font-size: $header2;
+  font-weight: lighter;
 }
 
 h4 {
