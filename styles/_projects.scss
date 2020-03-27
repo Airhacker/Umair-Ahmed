@@ -1,19 +1,69 @@
-.main-projects,
-.side-projects {
+// Projects Header
+.projects {
+  h1 {
+    font-size: $big-text;
+    margin: 2rem 0rem;
+  }
+
+  h2 {
+    font-size: $text;
+    margin: 2rem 0rem;
+  }
+}
+// Main Projects Template ---------------------------------
+
+.projects-main {
   @include flex(row, center, center);
   flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+
+  h3 {
+    font-size: $header2;
+    margin: 1rem 0rem;
+    font-weight: lighter;
+  }
+
+  h4 {
+    font-size: $text;
+    margin-right: 2rem;
+  }
 }
 
-.projects-main,
-.projects-side {
-  max-width: 40vw;
-  max-height: 50vh;
-  margin: 2rem;
+.projects-main-display {
+  @include flex(column, center, flex-start);
+  flex: 1 1 30rem;
+  img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-.projects-main img,
-.projects-side img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+.projects-description {
+  @include flex(column, center, flex-start);
+  flex: 1 1 30rem;
+  min-height: 100%;
+}
+
+.projects-description-1 {
+  @include flex(row, center, center);
+
+  a {
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: $text;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+
+    &:hover {
+      color: $special-color;
+      border-color: $special-color;
+    }
+  }
+}
+.projects-description-2 {
+  font-size: $text;
+  font-weight: lighter;
 }

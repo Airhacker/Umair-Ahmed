@@ -1,52 +1,103 @@
-// Header Element
+//Header Element -------------------------------------------
 
-header {
+.home-header {
   @include flex(row, center, center);
+  flex-wrap: wrap;
   min-height: 10vh;
+  width: 100%;
+  font-size: $text;
 }
 
-.main-nav {
-  @include flex(row, flex-start, center);
-  flex: 2 1 30rem;
-}
-
-.main-nav li {
-  margin: 0rem 2rem;
-}
+// Nav
 
 .home-nav {
+  @include flex(row, flex-start, center);
+  flex: 1 1 40rem;
+  height: 100%;
+}
+
+.home-links {
   @include flex(row, flex-end, center);
-  flex: 1 1 30rem;
+  flex: 1 1 40rem;
+  height: 100%;
 }
 
-.home-nav li {
+.home-nav ul,
+.home-links ul {
+  @include flex(row, center, center);
+}
+
+.home-nav li,
+.home-links li {
   margin: 0rem 2rem;
+  list-style: none;
+  cursor: pointer;
 }
 
-// Body Element
+.home-nav a,
+.home-links a {
+  color: whitesmoke;
+  text-decoration: none;
 
-.landing-page {
-  @include flex(column, center, center);
-  min-height: 85vh;
-
-  h1 {
-    letter-spacing: 1rem;
-    margin: 3rem;
+  &:hover {
+    color: $special-color;
   }
+}
 
-  ul {
-    @include flex(row, center, center);
+// Main Body -------------------------------------------
+.home-main {
+  @include flex(row, center, center);
+  min-height: 85vh;
+  width: 100%;
+}
+// Main Left Text
+.home-head {
+  @include flex(column, center, flex-start);
+  flex: 3 1 40rem;
+  height: 100%;
+}
 
-    li {
-      margin: 3rem 5rem;
+.home-head h1 {
+  font-size: $big-text;
+  margin: 2rem 0rem;
+}
+
+.home-head h2 {
+  font-size: $header2;
+}
+
+.home-head h3 {
+  font-size: $header2;
+  margin: 2rem 0rem;
+}
+
+.home-head a {
+  text-decoration: none;
+  color: whitesmoke;
+
+  &:hover {
+    color: $special-color;
+  }
+}
+
+// Main Right Image
+.home-image {
+  height: 100%;
+  flex: 1 1 40rem;
+}
+
+// Footer Element
+
+.home-footer {
+  @include flex(row, center, center);
+  font-size: $header4;
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+
+    &:hover {
+      color: $special-color;
     }
   }
-}
-
-//Footer Element
-
-footer {
-  opacity: 0.75;
-  min-height: 5vh;
-  @include flex(row, center, center);
 }
