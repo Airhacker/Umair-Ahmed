@@ -1,0 +1,53 @@
+#contact {
+  @include flex(column, center, flex-start);
+
+  h1 {
+    font-size: $big-text;
+    letter-spacing: 0.5rem;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.contact-form {
+  margin: 10rem 0rem;
+}
+
+.contact-form form {
+  @include flex(column, center, center);
+
+  input {
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-size: $text;
+  }
+
+  textarea {
+    padding: 1rem 0rem;
+    margin: 2rem 0rem;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-size: $text;
+  }
+
+  button {
+    padding: 2rem 5rem;
+    margin: 2rem 0rem;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2rem;
+
+    &:hover {
+      background: $special-color;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+}

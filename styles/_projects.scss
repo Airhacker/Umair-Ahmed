@@ -1,13 +1,15 @@
 // Projects Header
-.projects {
+#projects {
   h1 {
     font-size: $big-text;
-    margin: 2rem 0rem;
+    margin: 5rem 0rem;
+    letter-spacing: 0.5rem;
   }
 
   h2 {
     font-size: $text;
     margin: 2rem 0rem;
+    color: $text-color;
   }
 }
 // Main Projects Template ---------------------------------
@@ -27,6 +29,12 @@
   h4 {
     font-size: $text;
     margin-right: 2rem;
+  }
+
+  p {
+    color: $text-color;
+    line-height: 3.5rem;
+    text-align: justify;
   }
 }
 
@@ -55,7 +63,7 @@
     text-decoration: none;
     font-size: $text;
     color: whitesmoke;
-    border: 1px solid whitesmoke;
+    border: 3px solid whitesmoke;
 
     &:hover {
       color: $special-color;

@@ -1,0 +1,21 @@
+#about {
+  @include flex(column, center, flex-start);
+  flex-wrap: wrap;
+
+  font-size: $text;
+  color: $text-color;
+
+  h1 {
+    font-size: $big-text;
+    color: whitesmoke;
+    letter-spacing: 0.5rem;
+    margin: 5rem 0rem;
+  }
+
+  p {
+    font-size: $text;
+    text-align: justify;
+    line-height: 3.5rem;
+    margin: 1rem 0rem;
+  }
+}

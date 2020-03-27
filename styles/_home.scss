@@ -49,6 +49,7 @@
   @include flex(row, center, center);
   min-height: 85vh;
   width: 100%;
+  color: $text-color;
 }
 // Main Left Text
 .home-head {
@@ -60,6 +61,8 @@
 .home-head h1 {
   font-size: $big-text;
   margin: 2rem 0rem;
+  letter-spacing: 0.5rem;
+  color: whitesmoke;
 }
 
 .home-head h2 {
@@ -94,7 +97,7 @@
 
   a {
     text-decoration: none;
-    color: whitesmoke;
+    color: $text-color;
 
     &:hover {
       color: $special-color;
