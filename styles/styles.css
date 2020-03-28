@@ -34,7 +34,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 10vh;
-  width: 100%;
+  min-width: 100%;
   font-size: 2rem;
 }
 
@@ -208,6 +208,47 @@ body {
 
 .home-footer a:hover {
   color: #2c8bcf;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-header {
+    font-size: calc(1.5rem + 1vw);
+  }
+  .home-header svg {
+    display: none;
+  }
+  .home-head h1 {
+    font-size: calc(5rem + 1vw);
+  }
+  .home-head h2 {
+    font-size: calc(2rem + 1vw);
+  }
+  .home-head a {
+    font-size: calc(2rem + 1vw);
+  }
+  .home-footer {
+    font-size: calc(1.5rem + 1vw);
+  }
+  #projects h1,
+  #about h1,
+  #contact h1 {
+    font-size: calc(5rem + 1vw);
+  }
+  #projects h2,
+  #about h2,
+  #contact h2 {
+    font-size: calc(2rem + 1vw);
+  }
+  .contact-form {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    margin: none;
+    width: 100%;
+  }
 }
 
 #projects h1 {

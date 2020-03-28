@@ -4,7 +4,7 @@
   @include flex(row, center, center);
   flex-wrap: wrap;
   min-height: 10vh;
-  width: 100%;
+  min-width: 100%;
   font-size: $text;
 }
 
@@ -103,4 +103,63 @@
       color: $special-color;
     }
   }
+}
+
+// Media Queries for tablets
+
+@media screen and (max-width: 1200px) {
+  // Home Page
+  .home-header {
+    font-size: calc(1.5rem + 1vw);
+    svg {
+      display: none;
+    }
+  }
+
+  .home-head {
+    h1 {
+      font-size: calc(5rem + 1vw);
+    }
+
+    h2 {
+      font-size: calc(2rem + 1vw);
+    }
+
+    a {
+      font-size: calc(2rem + 1vw);
+    }
+  }
+
+  .home-footer {
+    font-size: calc(1.5rem + 1vw);
+  }
+
+  // Projects Page
+
+  #projects,
+  #about,
+  #contact {
+    h1 {
+      font-size: calc(5rem + 1vw);
+    }
+
+    h2 {
+      font-size: calc(2rem + 1vw);
+    }
+  }
+
+  .contact-form {
+    min-width: 100%;
+  }
+}
+
+// Media Queries for Phones
+
+@media screen and (max-width: 1000px) {
+  body {
+    margin: none;
+    width: 100%;
+  }
+
+  // Home Page
 }
