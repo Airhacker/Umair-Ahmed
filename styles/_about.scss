@@ -19,3 +19,22 @@
     margin: 1rem 0rem;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  #about {
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: calc(5rem + 1vw);
+      text-align: center;
+      letter-spacing: 0rem;
+    }
+
+    p {
+      text-align: left;
+      font-size: calc(1.5rem + 1vw);
+      line-height: 3rem;
+    }
+  }
+}
