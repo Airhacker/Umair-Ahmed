@@ -44,6 +44,11 @@
   }
 }
 
+//Burger Menu
+.menu-check {
+  display: none;
+}
+
 // Main Body -------------------------------------------
 .home-main {
   @include flex(row, center, center);
@@ -133,24 +138,6 @@
   .home-footer {
     font-size: calc(1.5rem + 1vw);
   }
-
-  // Projects Page
-
-  #projects,
-  #about,
-  #contact {
-    h1 {
-      font-size: calc(5rem + 1vw);
-    }
-
-    h2 {
-      font-size: calc(2rem + 1vw);
-    }
-  }
-
-  .contact-form {
-    min-width: 100%;
-  }
 }
 
 // Media Queries for Phones
@@ -161,5 +148,38 @@
     width: 100%;
   }
 
+  // Header Element
+  home-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-nav,
+  .home-links {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    li {
+      margin: 0.5rem 1rem;
+    }
+  }
   // Home Page
+
+  .home-head {
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+    }
+  }
+  .home-image {
+    display: none;
+  }
+  .home-footer {
+    justify-content: center;
+    align-items: center;
+  }
 }

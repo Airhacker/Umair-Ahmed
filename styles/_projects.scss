@@ -75,3 +75,43 @@
   font-size: $text;
   font-weight: lighter;
 }
+
+@media screen and (max-width: 1000px) {
+  // Projects Page
+  #projects {
+    h1 {
+      font-size: calc(5rem + 1vw);
+      text-align: center;
+      letter-spacing: 0rem;
+    }
+
+    h2 {
+      font-size: calc(1.5rem + 1vw);
+      text-align: center;
+    }
+
+    h3 {
+      font-size: calc(2rem + 1vw);
+    }
+  }
+
+  .projects-main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0rem;
+
+    h4 {
+      margin: 0rem;
+    }
+  }
+
+  .projects-main-display {
+    width: 100%;
+    img {
+      width: 95%;
+    }
+  }
+}

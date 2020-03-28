@@ -113,6 +113,10 @@ body {
   color: #2c8bcf;
 }
 
+.menu-check {
+  display: none;
+}
+
 .home-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,25 +233,60 @@ body {
   .home-footer {
     font-size: calc(1.5rem + 1vw);
   }
-  #projects h1,
-  #about h1,
-  #contact h1 {
-    font-size: calc(5rem + 1vw);
-  }
-  #projects h2,
-  #about h2,
-  #contact h2 {
-    font-size: calc(2rem + 1vw);
-  }
-  .contact-form {
-    min-width: 100%;
-  }
 }
 
 @media screen and (max-width: 1000px) {
   body {
     margin: none;
     width: 100%;
+  }
+  home-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-nav,
+  .home-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .home-nav li,
+  .home-links li {
+    margin: 0.5rem 1rem;
+  }
+  .home-head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-head h1 {
+    text-align: center;
+  }
+  .home-image {
+    display: none;
+  }
+  .home-footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -379,6 +418,46 @@ body {
 .projects-description-2 {
   font-size: 2rem;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 1000px) {
+  #projects h1 {
+    font-size: calc(5rem + 1vw);
+    text-align: center;
+    letter-spacing: 0rem;
+  }
+  #projects h2 {
+    font-size: calc(1.5rem + 1vw);
+    text-align: center;
+  }
+  #projects h3 {
+    font-size: calc(2rem + 1vw);
+  }
+  .projects-main {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0rem;
+  }
+  .projects-main h4 {
+    margin: 0rem;
+  }
+  .projects-main-display {
+    width: 100%;
+  }
+  .projects-main-display img {
+    width: 95%;
+  }
 }
 
 #about {
