@@ -1,14 +1,26 @@
 // Main Page earth animation
+.home-earth {
+  position: absolute;
+  animation: earth 60s linear infinite;
+  transform-origin: center;
+  right: 120px;
+  top: 325px;
+}
+
 #earth {
-  animation: earth 30s linear infinite;
+  animation: earth 90s linear infinite;
   transform-origin: center;
 }
 
-#moon {
-  animation: moon 3s linear infinite;
+#earth-moon {
+  animation: earth 15s linear infinite;
+  transform-origin: center;
 }
-
 // Animation Keyframes
+
+.home-moon {
+  position: absolute;
+}
 
 @keyframes earth {
   from {
@@ -19,13 +31,19 @@
   }
 }
 
-@keyframes moon {
+//Scroll Animation
+
+#scroll-wheel {
+  animation: scroll 1s linear infinite alternate;
+}
+
+@keyframes scroll {
   from {
-    transform: translateX(0px);
-    //transform: rotateZ(0deg);
+    transform: translateY(0px);
   }
   to {
-    transform: translateX(100px);
-    //transform: rotateZ(360deg);
+    transform: translateY(5px);
   }
 }
+
+//Star Animations
