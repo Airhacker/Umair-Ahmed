@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -15,6 +16,15 @@ body {
   font-family: sans-serif;
   width: 90%;
   margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: #2c8bcf;
 }
 
 .home-earth {
