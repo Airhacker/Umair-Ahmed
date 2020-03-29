@@ -1,0 +1,31 @@
+// Main Page earth animation
+#earth {
+  animation: earth 30s linear infinite;
+  transform-origin: center;
+}
+
+#moon {
+  animation: moon 3s linear infinite;
+}
+
+// Animation Keyframes
+
+@keyframes earth {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes moon {
+  from {
+    transform: translateX(0px);
+    //transform: rotateZ(0deg);
+  }
+  to {
+    transform: translateX(100px);
+    //transform: rotateZ(360deg);
+  }
+}

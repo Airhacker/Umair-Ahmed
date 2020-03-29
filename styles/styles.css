@@ -17,6 +17,62 @@ body {
   margin: auto;
 }
 
+#earth {
+  -webkit-animation: earth 30s linear infinite;
+          animation: earth 30s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#moon {
+  -webkit-animation: moon 3s linear infinite;
+          animation: moon 3s linear infinite;
+}
+
+@-webkit-keyframes earth {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes earth {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes moon {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@keyframes moon {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
 .home-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,13 +235,6 @@ body {
 
 .home-head a:hover {
   color: #2c8bcf;
-}
-
-.home-image {
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
 }
 
 .home-footer {
