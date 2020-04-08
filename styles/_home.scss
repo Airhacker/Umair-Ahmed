@@ -1,188 +1,137 @@
-//Header Element -------------------------------------------
+// Home Page
 
-.home-header {
-  @include flex(row, center, center);
-  flex-wrap: wrap;
-  min-height: 10vh;
-  min-width: 100%;
-  font-size: $text;
-}
+#home-page{
+    header{
+        width: 100%;
+        min-height: 8vh;
+    
+        @include flex(column, center, center);
 
-// Nav
-
-.home-nav {
-  @include flex(row, flex-start, center);
-  flex: 1 1 40rem;
-  height: 100%;
-}
-
-.home-links {
-  @include flex(row, flex-end, center);
-  flex: 1 1 40rem;
-  height: 100%;
-}
-
-.home-nav ul,
-.home-links ul {
-  @include flex(row, center, center);
-}
-
-.home-nav li,
-.home-links li {
-  margin: 0rem 2rem;
-  list-style: none;
-  cursor: pointer;
-}
-
-.home-nav a,
-.home-links a {
-  color: whitesmoke;
-  text-decoration: none;
-
-  &:hover {
-    color: $special-color;
-  }
-}
-
-//Burger Menu
-.menu-check {
-  display: none;
-}
-
-// Main Body -------------------------------------------
-.home-main {
-  @include flex(row, center, center);
-  min-height: 85vh;
-  width: 100%;
-  color: $text-color;
-}
-// Main Left Text
-.home-head {
-  @include flex(column, center, flex-start);
-  flex: 3 1 40rem;
-  height: 100%;
-}
-
-.home-head h1 {
-  font-size: $big-text;
-  margin: 2rem 0rem;
-  letter-spacing: 0.5rem;
-  color: whitesmoke;
-}
-
-.home-head h2 {
-  font-size: $header2;
-}
-
-.home-head h3 {
-  font-size: $header2;
-  margin: 2rem 0rem;
-}
-
-.home-head a {
-  text-decoration: none;
-  color: whitesmoke;
-
-  &:hover {
-    color: $special-color;
-  }
-}
-
-// Main Right Image
-
-// Footer Element
-
-.home-footer {
-  @include flex(row, center, center);
-  font-size: $header4;
-
-  a {
-    text-decoration: none;
-    color: $text-color;
-
-    &:hover {
-      color: $special-color;
+        button{
+            font-size: 3rem;
+            background: none;
+            color: whitesmoke;
+            border: none;
+            border-bottom: 3px solid transparent;
+            transition: 0.5s ease;
+            margin: 2rem 0rem;
+    
+            &:hover{
+                color: $special-color;
+                border-bottom: 3px solid $special-color;
+            }
+        }
+    
+        a{
+            font-size: 3rem;
+            border-bottom: 3px solid transparent;
+            transition: 0.5s ease;
+    
+            &:hover{
+                color: $special-color;
+                border-bottom: 3px solid $special-color;
+            }
+        }
     }
-  }
-}
-
-// Scroll animation
-
-// Media Queries for tablets
-
-@media screen and (max-width: 1200px) {
-  // Home Page
-  .home-header {
-    font-size: calc(1.5rem + 1vw);
-    svg {
-      display: none;
     }
-  }
+    nav{
+        position: absolute;
+        opacity: 0;
+        z-index: 3;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        @include flex(column, center,center);
+        top: 50%;
+        transform: translateY(-50%);
 
-  .home-head {
-    h1 {
-      font-size: calc(5rem + 1vw);
+        transition: all 0.5s ease;
+
+        
+    }
+    ul{
+        @include flex(column, center,center);
+        flex: 1 1 20rem
     }
 
-    h2 {
-      font-size: calc(2rem + 1vw);
-    }
 
-    a {
-      font-size: calc(2rem + 1vw);
-    }
-  }
 
-  .home-footer {
-    font-size: calc(1.5rem + 1vw);
-  }
+// Mobile Menu Styling
+#home-menu{
+    position: absolute;
+    z-index: 10;
+    top: 2%;
+    right: 4%;
+    font-size: 2rem;
+    background: none;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    color: whitesmoke;
+    padding: 1rem;
+    
+    transition: 0.5s ease;
+
+    &:hover{
+        color: $special-color;
+        border: $special-color 2px solid;
+    }
 }
 
-// Media Queries for Phones
 
-@media screen and (max-width: 1000px) {
-  body {
-    margin: none;
-    width: 100%;
-  }
+// Main Body
 
-  // Header Element
-  home-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .home-nav,
-  .home-links {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    li {
-      margin: 0.5rem 1rem;
+.hero-description{
+    width: 90%;
+    margin: auto;
+    min-height: 92vh;
+    max-height: 92vh;
+    @include flex(column, center, center);
+    h1{
+        text-align: center;
+        font-size: 8rem;
+        letter-spacing: 1rem;
+        margin: 3rem 0rem;
     }
-  }
-  // Home Page
 
-  .home-head {
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-      text-align: center;
+    h4{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 3rem;
     }
-  }
-  .home-image {
-    display: none;
-  }
-  .home-footer {
-    justify-content: center;
-    align-items: center;
-  }
 
-  // Earth Animation
-  .home-earth {
-    display: none;
-  }
+    button, a{
+        background: none;
+        color: whitesmoke;
+        border: 2px solid white;
+        padding: 1.5rem 3rem;
+        font-size: 2rem;
+        margin: 2rem 0rem;
+        transition: 0.5s ease;
+
+        &:hover{
+            color: $special-color;
+            border-color: $special-color;
+        }
+
+        &:focus{
+            background-color: $special-color;
+            border-color: whitesmoke;
+            color: whitesmoke;
+        }
+    }
+}
+
+.hero-image{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100vh;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(80%);
+    }
 }
