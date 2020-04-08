@@ -61,8 +61,8 @@
 #home-menu{
     position: absolute;
     z-index: 10;
-    top: 2%;
-    right: 4%;
+    top: 2.5%;
+    right: 5%;
     font-size: 2rem;
     background: none;
     border: 2px solid whitesmoke;
@@ -104,6 +104,7 @@
         background: none;
         color: whitesmoke;
         border: 2px solid white;
+        border-radius: 25px;
         padding: 1.5rem 3rem;
         font-size: 2rem;
         margin: 2rem 0rem;

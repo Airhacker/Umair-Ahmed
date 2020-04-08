@@ -19,3 +19,41 @@ menu.addEventListener('click', () => {
         menu.innerText = "Menu";
     }
 })
+
+// Home page animations
+
+//Hero Description Animation
+const tl = new gsap.timeline(); 
+
+tl.from(".hero-description", {
+   y:100,
+   opacity:0,
+   delay: 0.25,
+    stagger: {
+        amount: 1,
+        ease: "ease",
+    },
+});
+tl.from(".hero-image", {
+    duration:1,
+    opacity: 0, 
+    scale: 3
+});
+
+// Project Page Animations
+// Start Animation 
+
+const projectBtn = document.querySelector('.project-btn');
+const heading = document.querySelector('.project-heading');
+
+projectBtn.addEventListener('click', () => {
+    heading.style.display = 'block';
+    heading.style.color = "white";
+    tl.to('.project-heading', {
+        scale: 1,
+    });
+    heading.style.position = 'initial';
+})
+
+
+
