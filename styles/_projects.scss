@@ -1,77 +1,69 @@
-#projects-page{
-    min-height: 100vh;
-    @include flex(column,center,center);
-
+#projects-page {
+  min-height: 100vh;
+  @include flex(column, center, center);
 }
 
-.projects-header{
-    min-height: 20vh;
-    @include flex(column,flex-end,center);
+.projects-header {
+  min-height: 20vh;
+  @include flex(column, flex-end, center);
 
-    h4{
-        font-size: 2rem;
-        text-align: center;
-        margin: 1rem;
-    }
-}
-
-.projects-container{
-    width: 90%;
-    margin: auto;
-    height: 100%;
-}
-
-.project{
-    min-height: 60vh;
-    max-height: 60vh;
-    @include flex(column,center,center);
-}
-
-.display-image{
-    flex: 1 1 20rem;
-    width: 100%;
-    height: 100;
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.display-description{
-    flex: 1 1 20rem;
-    width: 100%;
-    height: 100%;
+  h4 {
+    font-size: 2rem;
     text-align: center;
-    @include flex(row,center,center);
-    flex-wrap: wrap;
-
-    a{
-        font-size: 2rem;
-        border: 2px solid whitesmoke;
-        padding: 1rem;
-        margin: 1rem;
-        border-radius: 25px;
-    }
-
-    h3{
-        font-size: 2rem;
-    }
-
-    p{
-        font-size: 2rem;
-    }
+    margin: 1rem;
+  }
 }
 
-.project-heading{
-        display: none;
-        letter-spacing: 1rem;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        font-size: 6rem;
-        color: transparent;
-        pointer-events: none;
-        transform: scale(110) translateX(7.5%) translateY(27%);
+.projects-container {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+
+.project {
+  min-height: 60vh;
+  max-height: 60vh;
+  @include flex(column, center, center);
+}
+
+.display-image {
+  flex: 1 1 20rem;
+  width: 100%;
+  height: 100;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.display-description {
+  flex: 1 1 20rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+
+  a {
+    font-size: 2rem;
+    border: 2px solid whitesmoke;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 25px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.project-heading {
+  font-size: 8rem;
+  text-align: center;
 }

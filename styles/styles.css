@@ -330,15 +330,7 @@ ul {
 }
 
 .project-heading {
-  display: none;
-  letter-spacing: 1rem;
+  font-size: 8rem;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  font-size: 6rem;
-  color: transparent;
-  pointer-events: none;
-  -webkit-transform: scale(110) translateX(7.5%) translateY(27%);
-          transform: scale(110) translateX(7.5%) translateY(27%);
 }
 /*# sourceMappingURL=styles.css.map */
