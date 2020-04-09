@@ -58,7 +58,7 @@
 }
 // Main Left Text
 .home-head {
-  @include flex(column, center, flex-start);
+  @include flex(column, center, center);
   flex: 3 1 40rem;
   height: 100%;
 }
